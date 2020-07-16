@@ -7,7 +7,7 @@ spring:
       port: 27017
       database: bootcamp-mongodb
   application:
-    name: customer
+    name: customer-service
   cloud:
     config:
       uri: http://localhost:8081
@@ -19,6 +19,6 @@ spring:
         url: http://localhost:8086
 eureka:
   client:
-    service-url:
-      defaultZone: http://localhost:8099/eureka
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
 
