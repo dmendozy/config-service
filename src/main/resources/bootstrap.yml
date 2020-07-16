@@ -5,4 +5,11 @@ spring:
     config:
       server:
           git:
-            uri: 
+            uri: https://github.com/dmendozy/project2-config.git
+            searchPath: config-data
+            username: ${GIT-USER}
+            password: ${GIT-PASSWORD}
+  security:
+    user:
+      name: root
+      password: p1w1ll0
