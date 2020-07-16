@@ -6,9 +6,9 @@ spring:
       server:
           git:
             uri: https://github.com/dmendozy/project2-config.git
-            searchPath: config-data
-            username: ${GIT-USER}
-            password: ${GIT-PASSWORD}
+            searchPaths: config-data
+            username: ${GIT_USER}
+            password: ${GIT_PASSWORD}
   security:
     user:
       name: root
