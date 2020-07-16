@@ -6,19 +6,5 @@ spring:
       host: localhost
       port: 27017
       database: bootcamp-mongodb
-  application:
-    name: customer-service
-  cloud:
-    config:
-      uri: http://localhost:8081
-      username: root
-      password: p1w1ll0
-  boot:
-    admin:
-      client:
-        url: http://localhost:8086
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8099/eureka/
+
 
