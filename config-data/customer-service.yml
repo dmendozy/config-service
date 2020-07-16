@@ -6,5 +6,8 @@ spring:
       host: localhost
       port: 27017
       database: bootcamp-mongodb
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
 
