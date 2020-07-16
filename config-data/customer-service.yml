@@ -1,15 +1,18 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/bootcamp-mongodb
+      host: localhost
+      port: 27017
+      database: bootcamp-mongodb
   application:
     name: customer
   cloud:
     config:
-      uri: http://localhost:8081
+      uri: http://localhost:8080
       username: root
       password: p1w1ll0
   boot:
     admin:
       client:
         url: http://localhost:8086
+
