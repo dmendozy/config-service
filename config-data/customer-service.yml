@@ -3,13 +3,13 @@ server:
 spring:
   data:
     mongodb:
-      host: localhost
+      host: 192.168.0.110
       port: 27017
       database: bootcamp-mongodb
       username: admin
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8099/eureka
+      defaultZone: http://192.168.0.110:8099/eureka
 
 
