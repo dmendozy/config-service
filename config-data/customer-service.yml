@@ -12,4 +12,13 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka
 
+resilience4j.circuitbreaker:
+  instances:
+    customer-service:
+      registerHealthIndicator: true
+      ringBufferSizeInClosedState: 5
+      ringBufferSizeInHalfOpenState: 3
+      waitDurationInOpenState: 2s
+      failureRateThreshold: 50
+
 
