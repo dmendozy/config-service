@@ -5,7 +5,7 @@ spring:
     config:
       server:
           git:
-            uri: https://github.com/dmendozy/project2-config.git
+            uri: https://github.com/dmendozy/project3-config-service.git
             search-paths:
               - config-data
             username: ${GIT_USER}
