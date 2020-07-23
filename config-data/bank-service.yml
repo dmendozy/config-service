@@ -1,0 +1,25 @@
+server:
+  port: 8086
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: bootcamp-mongodb
+      username: admin
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka
+
+management.endpoints.web.exposure.include: '*'
+management.endpoint.health.show-details: always
+
+resilience4j.circuitbreaker:
+  instances:
+    customer-service:
+      registerHealthIndicator: true
+      ringBufferSizeInClosedState: 5
+      ringBufferSizeInHalfOpenState: 3
+      waitDurationInOpenState: 2s
+      failureRateThreshold: 50
