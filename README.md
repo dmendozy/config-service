@@ -1,4 +1,4 @@
-Bootcamp-project2
+Bootcamp Microservices Project
 ======================
 # Getting Started
 This project is based on Spring Boot microservices using the reactive stack, read more info there https://spring.io/reactive
@@ -43,7 +43,7 @@ docker-compose up
 
 # Architecture
 
-![Architecture](https://raw.githubusercontent.com/dmendozy/project2-config/master/files/architecture.png)
+![Architecture](https://raw.githubusercontent.com/dmendozy/config-service/master/files/architecture.png)
 
 # Authors
 
