@@ -15,14 +15,10 @@ spring:
           uri: lb://customer-service
           predicates:
             - Path=/customers/**
-          filters:
-            - RewritePath=/customer/(?.*), /$\{path}
         - id: account-service
           uri: lb://account-service
           predicates:
             - Path=/accounts/**
-          filters:
-            - RewritePath=/account/(?.*), /$\{path}
         - id: transaction-service
           uri: lb://transaction-service
           predicates:
