@@ -33,7 +33,7 @@ spring:
             - Path=/credits/**
         - id: bank-service
           uri: lb://bank-service
-           predicates:
+          predicates:
             - Path=/banks/**
         - id: atm-service
           uri: lb://atm-service
