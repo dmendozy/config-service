@@ -32,10 +32,10 @@ spring:
           predicates:
             - Path=/credits/**
         - id: bank-service
-            uri: lb://bank-service
-            predicates:
-              - Path=/banks/**
+          uri: lb://bank-service
+           predicates:
+            - Path=/banks/**
         - id: atm-service
-            uri: lb://atm-service
-            predicates:
-              - Path=/atm/**
+          uri: lb://atm-service
+          predicates:
+            - Path=/atm/**
