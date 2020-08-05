@@ -33,10 +33,10 @@ docker ps
 6. Create image and container using the following code:
 ```
 mvn install
-docker build -f ./ -t config-service
+docker build . -t config-service
 docker run -p 8090:8090 --name config-service config-service
 ```
-7. After that, use docker compose to start the service
+7. After that, use docker compose to start the services
 ```
 docker-compose up
 ```
