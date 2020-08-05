@@ -29,21 +29,21 @@ docker run -d -p 27017:27017 --name bootcamp-mongodb mongo:latest
 ```
 docker ps
 ```
-5. Clone each repository called project2-* in my profile
-6. Create each image and container using the following code:
+5. Clone each repository from my [GitHub](https://github.com/dmendozy)
+6. Create image and container using the following code:
 ```
 mvn install
-docker build -f Dockerfile -t config-service
+docker build -f ./ -t config-service
 docker run -p 8090:8090 --name config-service config-service
 ```
-7. After create all images and container, use docker compose to start all services from project2-config
+7. After that, use docker compose to start the service
 ```
 docker-compose up
 ```
 
 # Architecture
 
-![Architecture](https://raw.githubusercontent.com/dmendozy/config-service/master/files/architecture.png)
+![Architecture](https://raw.githubusercontent.com/dmendozy/config-service/master/files/arch.png)
 
 # Authors
 
