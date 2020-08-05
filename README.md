@@ -1,4 +1,4 @@
-Bootcamp Microservices Project
+Config service
 ======================
 # Getting Started
 This project is based on Spring Boot microservices using the reactive stack, read more info there https://spring.io/reactive
@@ -29,14 +29,13 @@ docker run -d -p 27017:27017 --name bootcamp-mongodb mongo:latest
 ```
 docker ps
 ```
-5. Clone each repository from my [GitHub](https://github.com/dmendozy)
-6. Create image and container using the following code:
+5. Create an image and container for config-service using the following code:
 ```
 mvn install
 docker build . -t config-service
 docker run -p 8090:8090 --name config-service config-service
 ```
-7. After that, use docker compose to start the services
+6.Optional - use docker-compose to start all services:
 ```
 docker-compose up
 ```
